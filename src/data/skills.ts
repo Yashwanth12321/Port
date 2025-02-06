@@ -1,4 +1,4 @@
-import { ISkillListItem, SkillLevel } from "@/types";
+import { ISkillListItem } from "@/types";
 
 const skills: ISkillListItem[] = [
   {

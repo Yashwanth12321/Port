@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ConstrainedBox from "@/components/core/ConstrainedBox";
 import ResponsiveBox from "@/components/core/ResponsiveBox";
 import Column from "@/components/core/Column";
-import Row from "@/components/core/Row";
 import { motion } from "motion/react";
 
 const Section1 = ({ id }: Readonly<{ id: string }>) => {

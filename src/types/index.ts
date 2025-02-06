@@ -1,5 +1,5 @@
 import type { MouseEventHandler, ReactNode, RefObject } from "react";
-import { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 
 export interface CoreComponentsProps {

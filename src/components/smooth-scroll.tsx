@@ -10,8 +10,7 @@ interface LenisProps {
 }
 
 function SmoothScroll({ children }: LenisProps) {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
+  const lenis = useLenis(() => {
   });
 
   useEffect(() => {
@@ -19,7 +18,7 @@ function SmoothScroll({ children }: LenisProps) {
       lenis?.stop();
       lenis?.start();
     });
-  }, []);
+  },);
 
   return (
     <ReactLenis

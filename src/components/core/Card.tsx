@@ -16,8 +16,8 @@ const CardBox = (props: Readonly<CoreComponentsProps>) => {
     mouseX.set(e.clientX - left);
     mouseY.set(e.clientY - top);
   }
-  let maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
-  let style = { maskImage, WebkitMaskImage: maskImage };
+  const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
     <div
