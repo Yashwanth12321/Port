@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --borderRadius: 0.5rem;
+    --primaryColor50: rgba(0, 177, 113, 0.5);
+
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --textColorLight: rgba(180, 180, 180, 1);
+    --textColorDark: rgba(75, 75, 75, 1);
+    --textColor: rgba(248, 248, 248, 1);
+    --primaryColor: rgba(0, 177, 113, 1);
+    --secondaryColor: rgba(0, 237, 138, 1);
+
+    --primaryGrad: linear-gradient(
+      118.18deg,
+      var(--primaryColor) 0.99%,
+      var(--secondaryColor) 100%
+    );
+
+
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out 2700ms forwards; /* Delay of 2700ms */
+}
+
+/* globals.css or specific component CSS */
+/* globals.css or specific component CSS */
+
+
+.dark-background.even {
+  background-color: #121212; /* Solid dark background */
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px; /* Dot size */
+  background-position: 0 0, 0 0;
+  background-repeat: repeat;
+  min-height: 100vh; /* Full height of the section */
+}
+
+
+
+/* For odd sections - Radial dots pattern */
+.dark-background.odd {
+  background-color: rgb(18, 22, 27); /* Solid dark background */
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px; /* Dot size */
+  background-position: 0 0, 0 0;/* Shift the pattern more to the right */
+  background-repeat: repeat; /* Repeat the pattern */
+  min-height: 100vh; /* Full height of the section */
+}
+
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(47, 48, 49, 0.7);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(44, 46, 48, 0.9);
+}
+
+.constrained-width {
+  width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .constrained-width {
+    max-width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .constrained-width {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .constrained-width {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .constrained-width {
+    max-width: 100%;
+  }
+}
