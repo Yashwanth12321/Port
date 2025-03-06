@@ -10,20 +10,30 @@ const FloatingNavbar = dynamic(() => import('@/components/navbar/FloatingNavbar'
 
 export default function RootClientLayout({ children }: { children: React.ReactNode }) {
   const [showNavbar, setShowNavbar] = useState(false);
-
+  const [showBraindump, setShowBraindump] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    if(sessionStorage.getItem("LoaderDone")){
       setShowNavbar(true);
-    }, 2300); 
+    }
+    else{
+      const timer = setTimeout(() => {
+        setShowNavbar(true);
+      }, 2300); 
+      return () => clearTimeout(timer);
 
-    return () => clearTimeout(timer);
+    }
+
+  }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem("LoaderDone", "true");
   }, []);
 
   return (
     <>
       {showNavbar && <FloatingNavbar className="app_nav" navItems={navMenus} />}
-      <Loader />
+      {!sessionStorage.getItem("LoaderDone") && <Loader />}
 
         <ThemeProvider
           attribute="class"

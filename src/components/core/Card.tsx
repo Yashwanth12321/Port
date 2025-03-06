@@ -1,4 +1,3 @@
-"use client";
 
 import type { MouseEvent } from "react";
 import type { CoreComponentsProps } from "@/types";

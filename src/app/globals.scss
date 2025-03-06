@@ -6,6 +6,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+  
+}
+
 @layer base {
   :root {
     --borderRadius: 0.5rem;
@@ -109,11 +114,6 @@ body {
 
 .dark-background.even {
   background-color: #121212; /* Solid dark background */
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px; /* Dot size */
-  background-position: 0 0, 0 0;
-  background-repeat: repeat;
   min-height: 100vh; /* Full height of the section */
 }
 
@@ -122,11 +122,6 @@ body {
 /* For odd sections - Radial dots pattern */
 .dark-background.odd {
   background-color: rgb(18, 22, 27); /* Solid dark background */
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 30px 30px; /* Dot size */
-  background-position: 0 0, 0 0;/* Shift the pattern more to the right */
-  background-repeat: repeat; /* Repeat the pattern */
   min-height: 100vh; /* Full height of the section */
 }
 

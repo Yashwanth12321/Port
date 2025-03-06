@@ -5,7 +5,7 @@ const ResponsiveBox = (props: Readonly<CoreComponentsProps>) => {
 
   return (
     <div
-      className={`relative flex flex-col justify-start items-start w-full h-auto p-0 mx-auto my-0 overflow-hidden transition duration-300 ease-in-out ${classNames}`}
+      className={`relative flex flex-row justify-start items-start w-full h-auto p-0 mx-auto my-0 overflow-hidden transition duration-300 ease-in-out ${classNames}`}
       id={id}
       ref={elementRef}
       onClick={onClick}

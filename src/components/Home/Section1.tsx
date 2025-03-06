@@ -3,14 +3,15 @@ import ConstrainedBox from "@/components/core/ConstrainedBox";
 import ResponsiveBox from "@/components/core/ResponsiveBox";
 import Column from "@/components/core/Column";
 import { motion } from "motion/react";
+import BrainMindMap from "@/components/Braindump/BrainMindMap";
 
 const Section1 = ({ id }: Readonly<{ id: string }>) => {
   return (
     <ResponsiveBox
-      classNames="dark-background even items-center justify-center"
+      classNames="dark-background even items-center justify-center flex flex-col md:flex-row "
       id={id}
     >
-      <ConstrainedBox classNames="px-4 py-8 pt-16 z-20 items-center justify-center fade-in">
+      <ConstrainedBox classNames="px-4 py-8 pt-16 z-20 items-center justify-center">
         <Column classNames="w-full items-center justify-center">
           {/* Animated Name and Profession */}
           <motion.div
@@ -27,9 +28,9 @@ const Section1 = ({ id }: Readonly<{ id: string }>) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="text-sm md:text-base dark:text-[var(--textColorLight)] text-[var(--textColorLight)] mt-4"
+            className="text-2xl md:text-2xl dark:bg-gradient-to-r dark:from-[var(--textColorLight)] dark:to-[var(--primaryColor)] dark:bg-clip-text dark:text-transparent bg-gradient-to-r from-[var(--textColorLight)] to-[var(--primaryColor)] bg-clip-text text-transparent mt-4 "
           >
-            Software Development Engineer (SDE)
+            Polymath All the way FTW
           </motion.p>
 
           {/* Call to Action Button */}
@@ -48,6 +49,12 @@ const Section1 = ({ id }: Readonly<{ id: string }>) => {
             </Link>
           </motion.div>
         </Column>
+      </ConstrainedBox>
+      <ConstrainedBox classNames="p-4 py-8 pt-16 z-20 items-center justify-center border border-green-400 ">
+        <div className="w-full items-center justify-center">
+          <BrainMindMap />
+        </div>
+
       </ConstrainedBox>
     </ResponsiveBox>
   );

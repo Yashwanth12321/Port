@@ -14,8 +14,8 @@ export const navMenus: INavItem[] = [
   //   icon: faHome,
   // },
   {
-    name: "About",
-    link: "/#about",
+    name: "Home",
+    link: "/#home",
     icon: faUser,
   },
   {

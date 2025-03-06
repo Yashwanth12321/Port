@@ -2,11 +2,13 @@
 
 import {useState} from "react";
 
-import {Preloader} from "@/components/Preloader"
+import {Preloader} from "@/components/Preloader/modern/preloader"
+
 import { AnimatePresence } from "motion/react";
 
 export default function Loader() {
-    const [isLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
+
 
     return (
         <AnimatePresence mode="wait">
