@@ -3,7 +3,6 @@ import ConstrainedBox from "@/components/core/ConstrainedBox";
 import ResponsiveBox from "@/components/core/ResponsiveBox";
 import Column from "@/components/core/Column";
 import { motion } from "motion/react";
-import dynamic from "next/dynamic";
 // const BrainMindMap = dynamic(() => import("@/components/Braindump/BrainMindMap"), { ssr: false });
 
 const Section1 = ({ id }: Readonly<{ id: string }>) => {

@@ -4,7 +4,6 @@ import {
   faTimeline,
   faAward,
   faLaptopCode,
-  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const navMenus: INavItem[] = [
