@@ -74,15 +74,11 @@ const skills: ISkillListItem[] = [
     ],
   },
   {
-    title: "DevOps",
+    title: "Tools",
     items: [
       {
         title: "Docker",
         icon: "/skills/docker.png",
-      },
-      {
-        title: "Azure devops",
-        icon: "/skills/aws.svg",
       },
       {
         title: "Git",

@@ -9,8 +9,8 @@ const experiences: IExperienceItem[] = [
     isCurrentJob: false,
     location: "Onsite",
     description: [
-      "Worked on hrm application focussing on frontend part",
-      "learned about ci/cd pipelines using azure devops",
+      "Worked on hrm application reward module feature",
+      "implemented ci/cd pipelines using azure devops",
     ],
   },
 ];

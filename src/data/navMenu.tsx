@@ -33,9 +33,4 @@ export const navMenus: INavItem[] = [
     link: "/#projects",
     icon: faLaptopCode,
   },
-  {
-    name: "Contact",
-    link: "/#contact",
-    icon: faEnvelope,
-  },
 ];

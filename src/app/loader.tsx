@@ -7,7 +7,7 @@ import {Preloader} from "@/components/Preloader/modern/preloader"
 import { AnimatePresence } from "motion/react";
 
 export default function Loader() {
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading] = useState(true);
 
 
     return (

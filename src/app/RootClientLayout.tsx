@@ -10,7 +10,7 @@ const FloatingNavbar = dynamic(() => import('@/components/navbar/FloatingNavbar'
 
 export default function RootClientLayout({ children }: { children: React.ReactNode }) {
   const [showNavbar, setShowNavbar] = useState(false);
-  const [showBraindump, setShowBraindump] = useState(false);
+  const [value,setValue] = useState(0);
 
   useEffect(() => {
     if(sessionStorage.getItem("LoaderDone")){
@@ -28,12 +28,13 @@ export default function RootClientLayout({ children }: { children: React.ReactNo
 
   useEffect(() => {
     sessionStorage.setItem("LoaderDone", "true");
+    setValue(1);
   }, []);
 
   return (
     <>
       {showNavbar && <FloatingNavbar className="app_nav" navItems={navMenus} />}
-      {!sessionStorage.getItem("LoaderDone") && <Loader />}
+      {value === 0 && <Loader />}
 
         <ThemeProvider
           attribute="class"

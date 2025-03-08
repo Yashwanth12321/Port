@@ -3,12 +3,15 @@ import ConstrainedBox from "@/components/core/ConstrainedBox";
 import ResponsiveBox from "@/components/core/ResponsiveBox";
 import Column from "@/components/core/Column";
 import { motion } from "motion/react";
-import BrainMindMap from "@/components/Braindump/BrainMindMap";
+import dynamic from "next/dynamic";
+// const BrainMindMap = dynamic(() => import("@/components/Braindump/BrainMindMap"), { ssr: false });
 
 const Section1 = ({ id }: Readonly<{ id: string }>) => {
+  const resumeLink="https://docs.google.com/document/d/1TGhunJGFrT1HtDclxhfKeqVkr08y6Sc2pE8Rk1RskSg/edit?usp=sharing"
+
   return (
     <ResponsiveBox
-      classNames="dark-background even items-center justify-center flex flex-col md:flex-row "
+      classNames="dark-background even items-center justify-center flex flex-col md:flex-row  min-h-screen "
       id={id}
     >
       <ConstrainedBox classNames="px-4 py-8 pt-16 z-20 items-center justify-center">
@@ -42,20 +45,22 @@ const Section1 = ({ id }: Readonly<{ id: string }>) => {
           >
             <Link href="#contact">
               <button
-                className="bg-green-500 text-white py-2 px-8 rounded-full shadow-lg hover:bg-green-600 transform transition-all ease-in-out duration-300"
+                onClick={()=> window.open(resumeLink)}
+                className="py-2 px-8 rounded-full shadow-lg transform transition-all ease-in-out duration-300 dark:bg-gradient-to-r dark:from-[var(--textColorLight)] dark:to-[var(--primaryColor)] dark:bg-clip-text dark:text-transparent bg-gradient-to-r from-[var(--textColorLight)] to-[var(--primaryColor)] bg-clip-text text-transparent border border-green-500 hover:border-blue-600 "
               >
-                Download Resume
+                View Resume
               </button>
             </Link>
           </motion.div>
         </Column>
       </ConstrainedBox>
-      <ConstrainedBox classNames="p-4 py-8 pt-16 z-20 items-center justify-center border border-green-400 ">
+      {/* <ConstrainedBox classNames="p-4 py-8 pt-16 z-20 items-center justify-center border border-green-400 ">
+        
         <div className="w-full items-center justify-center">
           <BrainMindMap />
         </div>
 
-      </ConstrainedBox>
+      </ConstrainedBox> */}
     </ResponsiveBox>
   );
 };
