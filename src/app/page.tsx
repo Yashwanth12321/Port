@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center pt-10">
           <div className="">
-            <Image className="rounded-full w-20" src="../../seneca.png" alt="seneca" width={40} height={40} />
+            <Image className="rounded-full w-20" src="/seneca.png" alt="seneca" width={40} height={40} />
           </div>
           <div className="flex flex-col items-center">
             <h1 className="text-2xl">Yashwanth Napa</h1>
