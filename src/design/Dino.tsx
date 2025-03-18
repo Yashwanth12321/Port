@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { useRef } from 'react';
+// @ts-expect-error this lib doest have its ts declarations
 const ChromeDinoGame = dynamic(() => import('react-chrome-dino'), { ssr: false });
 
 const Dino = () => {

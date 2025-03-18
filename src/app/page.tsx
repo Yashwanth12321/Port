@@ -7,7 +7,6 @@ import { projects, Project } from "@/data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/footer";
-// import Dino from "../components/Dino";
 import Dino from "@/design/Dino";
 
 export default function Home() {
@@ -33,7 +32,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center pt-10">
           <div className="">
-            <img className="rounded-full w-20" src="../../seneca.png" alt="seneca" />
+            <Image className="rounded-full w-20" src="../../seneca.png" alt="seneca" width={40} height={40} />
           </div>
           <div className="flex flex-col items-center">
             <h1 className="text-2xl">Yashwanth Napa</h1>
