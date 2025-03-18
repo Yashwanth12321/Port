@@ -45,20 +45,29 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
   ) => {
     const mouseX = useMotionValue(Infinity);
 
-    const renderChildren = () => {
-      return React.Children.map(children, (child) => {
-        if (React.isValidElement(child) && child.type === DockIcon) {
-          return React.cloneElement(child, {
-            ...child.props,
-            mouseX: mouseX,
-            size: iconSize,
-            magnification: iconMagnification,
-            distance: iconDistance,
-          });
-        }
-        return child;
+// Define DockIcon props
+interface DockIconProps {
+  mouseX?: MotionValue<number>;
+  size?: number;
+  magnification?: number;
+  distance?: number;
+  // Add other props your DockIcon uses
+}
+
+const renderChildren = () => {
+  return React.Children.map(children, (child) => {
+    if (React.isValidElement<DockIconProps>(child) && child.type === DockIcon) {
+      return React.cloneElement(child, {
+        ...child.props,
+        mouseX,
+        size: iconSize,
+        magnification: iconMagnification,
+        distance: iconDistance,
       });
-    };
+    }
+    return child;
+  });
+};
 
     return (
       <motion.div
