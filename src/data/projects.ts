@@ -14,14 +14,14 @@ export const projects: Project[] = [
         description: "A blog application built with Next.js and TypeScript.",
         skills: ["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
         briefDescription: "A blog application built with Next.js and TypeScript.",
-        links: {github: "https://github.com/Yashwanth12321/blog-app", demo: "https://blog-app-username.vercel.app"}
+        links: {github: "https://github.com/Yashwanth12321/blog", demo: "https://blog-app-username.vercel.app"}
     },
     {
         title: "Claims Management System",
-        description:"A claims management system built with Next.js and TypeScript.",
-        skills:["Next.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
-        briefDescription: "A claims management system built with Next.js and TypeScript.",
-        links: {github: "https://github.com/Yashwanth12321/claims-management-system", demo: "https://claims-management-system-username.vercel.app"}
+        description:"A claims management system built with React.js and TypeScript.",
+        skills:["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
+        briefDescription: "A claims management system",
+        links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "https://claims-management-system-username.vercel.app"}
     },
     {
         title: "Influencer Selection Algorithm",
