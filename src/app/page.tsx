@@ -8,6 +8,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/footer";
 // import Dino from "../components/Dino";
+import Dino from "@/design/Dino";
 
 export default function Home() {
   const transition = {
@@ -107,13 +108,12 @@ export default function Home() {
         <div className="">
           <div className="">
           <h1 className="text-2xl">Enjoy the nostalgia</h1>
+          <Dino />
             
           </div>
 
         </div>
         <br />
-
-          {/* <Dino /> */}
       </div>
       <br />
         <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />

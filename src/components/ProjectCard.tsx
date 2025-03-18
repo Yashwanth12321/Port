@@ -6,8 +6,8 @@ import { Badge } from "./ui/badge"
 export const ProjectCard = ( {project}: {project: Project}) => {
     return (
         <div className="flex flex-col space-y-4 border border-zinc-800 rounded-md p-6 hover:scale-105 transition-all">
-            <div>
-                <Image src="/globe.svg" width={100} height={100} alt={project.title} />
+            <div className="flex justify-center items-center ">
+                {project.image ? <Image src={project.image} width={500} height={500} alt={project.title} /> : <Image src="/globe.svg" width={100} height={100} alt={project.title} />}
             </div>
             <div className="flex flex-row space-x-4">
                 <div>
