@@ -13,21 +13,21 @@ export const projects: Project[] = [
     {
         image: "/projects/blog.png",
         title: "Blog Application",
-        description: "A blog application built with Next.js and TypeScript.",
+        description: "A blog application built for minimal configuration and just content",
         skills: ["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
-        briefDescription: "A blog application built with Next.js and TypeScript.",
-        links: {github: "https://github.com/Yashwanth12321/blog", demo: "https://blog-app-username.vercel.app"}
+        briefDescription: "A blog application built for minimal configuration and just content",
+        links: {github: "https://github.com/Yashwanth12321/blog", demo: "http://bestsimpledemobucket.s3-website.ap-south-1.amazonaws.com"}
     },
     {
         image: "/projects/claim_management.png",
         title: "Claims Management System",
-        description:"A claims management system built with React.js and TypeScript.",
+        description:"A claims management system built to streamline insurance claims process.",
         skills:["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
-        briefDescription: "A claims management system",
-        links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "https://claims-management-system-username.vercel.app"}
+        briefDescription: "A claims management system built to streamline insurance claims process.",
+        links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "http://claimfrontendaarogyaid.s3-website.ap-south-1.amazonaws.com"}
     },
     {
-        image: "",
+        image: "/projects/influencer.webp",
         title: "Influencer Selection Algorithm",
         description:"A way to identify most popular influencer based on score point from raw videos",
         skills:["Python", "Pandas", "Numpy", "MediaPipe", "OpenCV", "Deepface"],
@@ -35,19 +35,19 @@ export const projects: Project[] = [
         links: {github: "https://github.com/Yashwanth12321/influencer-analysis", demo: ""}
     },
     {
-        image: "",
+        image: "/projects/lms.webp",
         title: "Library Management System",
-        description: "A library management system built with Flutter",
+        description: "A library management system mobile application containing all required features including book issue/retrieval scan and more.",
         skills: ["Flutter", "Dart", "Firebase", "Cloud Firestore"],
-        briefDescription: "A library management system built with Flutter",
+        briefDescription: "A library management system mobile application containing all required features including book issue/retrieval scan and more.",
         links: {github: "https://github.com/Yashwanth12321/LMS", demo: ""}
     },
     {
-        image: "",
+        image: "/projects/vGIS.png",
         title: "Spatial visualization tool",
-        description: "A spatial visualization tool built with React",
+        description: "A spatial visualization tool to better visualize multiple data across India including Covid data, Gdp data, and gain insights",
         skills: ["React.js", "Javascript", "Tailwind CSS"],
-        briefDescription: "A spatial visualization tool built with React",
+        briefDescription: "A spatial visualization tool to better visualize multiple data across India including Covid data, Gdp data, and gain insights",
         links: {github: "https://github.com/Yashwanth12321/vGIS", demo: ""}
     }
     
