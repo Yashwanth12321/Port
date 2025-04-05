@@ -24,8 +24,7 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <Link href="/" className="text-lg hover:underline hover:text-blue-500 transition-all">Home</Link>
-            <Link href="/about" className="text-lg hover:underline hover:text-blue-500 transition-all">About</Link>
-            <Link href="/contact" className="text-lg hover:underline hover:text-blue-500 transition-all">Contact</Link>
+            <Link href="/learnings" className="text-lg hover:underline hover:text-blue-500 transition-all">Learnings</Link>
           </div>
         </div>
 
@@ -36,7 +35,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <h1 className="text-2xl">Yashwanth Napa</h1>
-            <p className="text-lg">developer</p>
+            <p className="text-lg">Engineer</p>
 
             <div className="flex items-center space-x-4 mt-4">
               {/* "I like" section */}
