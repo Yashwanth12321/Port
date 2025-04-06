@@ -19,6 +19,11 @@ export const cracked:cracked[]=[
         name:"Live overflow",
         link:"https://www.youtube.com/@LiveOverflow",
         about:"bits hacker"
+    },
+    {
+        name:"jdh",
+        link:"https://www.youtube.com/@jdh",
+        about:"cracked scratch dev"
     }
 
 
