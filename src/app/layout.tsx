@@ -13,6 +13,9 @@ export const quantico = Quantico({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Yashwanth Napa's portfolio",
+  icons : {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

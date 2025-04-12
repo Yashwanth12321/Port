@@ -27,12 +27,12 @@ export const projects: Project[] = [
         links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "http://claimfrontendaarogyaid.s3-website.ap-south-1.amazonaws.com"}
     },
     {
-        image: "/projects/influencer.webp",
+        image: "/projects/influencer.png",
         title: "Influencer Selection Algorithm",
         description:"A way to identify most popular influencer based on score point from raw videos",
         skills:["Python", "Pandas", "Numpy", "MediaPipe", "OpenCV", "Deepface"],
         briefDescription: "A way to identify most popular influencer based on score point from raw videos",
-        links: {github: "https://github.com/Yashwanth12321/influencer-analysis", demo: ""}
+        links: {github: "https://github.com/Yashwanth12321/Influencer-anaysis", demo: ""}
     },
     {
         image: "/projects/lms.webp",
@@ -49,6 +49,22 @@ export const projects: Project[] = [
         skills: ["React.js", "Javascript", "Tailwind CSS"],
         briefDescription: "A spatial visualization tool to better visualize multiple data across India including Covid data, Gdp data, and gain insights",
         links: {github: "https://github.com/Yashwanth12321/vGIS", demo: ""}
+    },
+    {
+        image: "/projects/ling.png",
+        title: "Realtime Voice translator",
+        description: "A realtime voice translator built to translate audio to text and vice versa",
+        skills: ["python", "docker", "api", "ASR", "TTS"],
+        briefDescription: "A realtime voice translator built to translate audio to text and vice versa",
+        links: {github: "https://github.com/Yashwanth12321/LinguasyncV2", demo: ""}
+    },
+    {
+        image:"/projects/repohelp.png",
+        title:"Chat with Github Repo",
+        description:"A chatbot interface to understand that github repo better to make contributions",
+        skills:["gemini api", "github api", "python","Streamlit",],
+        briefDescription: "A chatbot interface to understand that github repo better to make contributions",
+        links: {github: "https://github.com/Yashwanth12321/repohelp", demo: ""}
     }
     
 ]

@@ -8,6 +8,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Dino from "@/design/Dino";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Home() {
   const transition = {
@@ -48,11 +49,12 @@ export default function Home() {
                 <p className="text-lg">Building stuff if it is useful or fun</p>
                 <p className="text-lg">Exploring web dev, AI/ML, security, game dev, and more</p>
                 <p className="text-lg">Reading books</p>
-                <p className="text-lg">Polymathy is the way</p>
               </div>
             </div>
 
           </div>
+          
+          
         </div>
         <br />
         <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
@@ -65,7 +67,9 @@ export default function Home() {
           <div className="w-full">
             {experiences.map((exp: Experience) => (
               <div key={exp.company} className="flex flex-row space-x-4 gap-4 mb-4 mt-4 border border-zinc-800 rounded-md p-6 hover:scale-105 transition-all  ">
+                
                 <div className="flex gap-3 items-center">
+                  
                   <Image
                     src={"/SRF-logo.png"}
                     width={45}
@@ -79,9 +83,18 @@ export default function Home() {
                   <h2 className="font-bold underline hover:no-underline text-lg">
                     {exp.company}
                   </h2>
-                  <p className="text-lg">{exp.title} | {exp.location} | {exp.startDate} - {exp.endDate}</p>
+                  <p className="text-lg text-zinc-300">{exp.title} | {exp.location} | {exp.startDate} - {exp.endDate}</p>
 
+                  <ul className="text-sm list-disc text-zinc-600">
+                    {exp.description.map((desc: string) => (
+                      <li key={desc}>{desc}</li>
+                    ))}
+                  </ul>
+                  
+                  
                 </div>
+                
+
               </div>
             ))}
           </div>
@@ -94,10 +107,14 @@ export default function Home() {
 
           {/* Grid Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 mt-4">
-            {projects.map((project: Project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
             
+            {projects.map((project: Project) => (
+              <div key={project.title} >
+                <ProjectCard project={project} />
+            
+              </div>
+            ))}
+
             <Link className="flex flex-col items-center justify-center space-y-4 border border-zinc-800 rounded-md p-6 hover:scale-105 transition-all" href="/projects">
               Checkout other stuff
             </Link>
@@ -105,20 +122,24 @@ export default function Home() {
         </div>
         <div className="">
           <div className="">
-          <h1 className="text-2xl">Enjoy the nostalgia</h1>
-          <Dino />
-            
+            <h1 className="text-2xl">Enjoy the nostalgia</h1>
+            <Dino />
+
           </div>
 
         </div>
         <br />
       </div>
       <br />
-        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+      <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
       <br />
       <br />
       <br />
-      <Footer  />
+      <Footer />
     </motion.main>
   );
 }
+
+
+
+
