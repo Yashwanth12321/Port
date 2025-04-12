@@ -8,7 +8,6 @@ import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Dino from "@/design/Dino";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Home() {
   const transition = {
@@ -109,7 +108,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 mt-4">
             
             {projects.map((project: Project) => (
-              <div key={project.title} >
+              <div key={project.title}>
                 <ProjectCard project={project} />
             
               </div>
