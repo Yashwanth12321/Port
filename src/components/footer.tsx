@@ -89,7 +89,7 @@ function animateFlame3() {
 
   return (
     <footer className="bg-black absolute w-full h-40 mt-20 mb-10 flex flex-col items-center justify-center">
-      <div className="cf-container">
+      <div className="cf-container ">
         <div className="cf-flame-container" id="fireNodes1">
         </div>
         <div className="cf-flame-container" id="fireNodes2">

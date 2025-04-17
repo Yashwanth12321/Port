@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
     {
         title: "Software Intern",
         logo: "../../SRF-logo.png",
-        company: "STF-LTD (TC & COS)",
+        company: "STF-LTD",
         location: "Chennai",
         startDate: "July 2024",
         endDate: "August 2024",

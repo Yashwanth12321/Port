@@ -61,7 +61,7 @@ export default function Home() {
             times: [0, 0.666, 1],
           }}
         >
-          <div className="flex flex-col items-center justify-center pt-10">
+          <div className="flex flex-col items-center justify-center pt-10 ">
             <div className="">
               <Image className="rounded-full w-20" src="/seneca.png" alt="seneca" width={40} height={40} />
             </div>
@@ -71,15 +71,16 @@ export default function Home() {
 
               <div className="flex items-center space-x-4 mt-4">
                 {/* "I like" section */}
-                <div className="text-3xl font-bold flex items-center flex-[1]">
-                  <h2>I like</h2>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center flex-[1]">
+                  <h4>I like</h4>
                 </div>
 
+
                 {/* Description section */}
-                <div className="flex flex-col gap-2 flex-[5]">
-                  <p className="text-lg">Building stuff if it is useful or fun</p>
-                  <p className="text-lg">Exploring web dev, AI/ML, security, game dev, and more</p>
-                  <p className="text-lg">Reading books</p>
+                <div className="flex flex-col gap-2 flex-[5] sm:text-sm md:text-lg lg:text-lg text-gray-400">
+                  <p>Building stuff if it is useful or fun</p>
+                  <p>Exploring web dev, AI/ML, security, game dev, and more</p>
+                  <p>Reading books</p>
                 </div>
               </div>
 
@@ -105,28 +106,34 @@ export default function Home() {
               <h1 className="text-2xl font-bold"> Work experience</h1>
 
             </div>
-            <div className="w-full">
+            <div className="w-full ">
               {experiences.map((exp: Experience) => (
 
-                <div onClick={() => toggleDrawer(exp.company)} key={exp.company} className="flex flex-row space-x-4 gap-4 mb-4 mt-4 border border-zinc-800 rounded-md p-6 hover:scale-105 transition-all  ">
+                <div onClick={() => toggleDrawer(exp.company)} key={exp.company} className=" flex flex-row space-x-2 md:space-x-4   mb-4 mt-4 border border-zinc-800 rounded-md p-3 md:p-6 hover:scale-105 transition-all   ">
                   <div className="flex items-center">
                     <Image
-                      src={"/SRF-logo.png"}
+                      src="/SRF-logo.png"
+                      alt={exp.company}
                       width={45}
                       height={45}
-                      alt={exp.company}
-                      className="rounded-full"
+                      className="min-w-[45px] min-h-[45px] w-[45px] h-[45px] rounded-full"
                     />
                   </div>
 
 
+
                   <div className="flex flex-col ">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h2 className="font-bold underline hover:no-underline text-lg">
-                          {exp.company}
-                        </h2>
-                        <p className="text-lg text-zinc-300">{exp.title} | {exp.location} | {exp.startDate} - {exp.endDate}</p>
+                    <div className="flex flex-row  justify-between w-full ">
+                      <div className="w-full">
+                        <div className="flex flex-row  justify-between ">
+                          <h2 className="font-bold underline hover:no-underline  sm:text-md md:text-lg lg:text-lg ">
+                            {exp.company}
+                          </h2>
+                          <h3 className="text-[11px] sm:text-[11px] md:text-lg lg:text-sm text-gray-400">{exp.startDate} - {exp.endDate}</h3>
+                        </div>
+                        <p className="text-[14px] sm:text-[14px] md:text-lg lg:text-sm text-gray-400">
+                          {exp.title}
+                        </p>
                       </div>
                       <ChevronRight
                         className={`transition-transform duration-300 ${openDrawer === exp.company ? "rotate-90" : "rotate-0"
@@ -209,7 +216,7 @@ export default function Home() {
       <br />
       <br />
       <br />
-      <Footer />
+        <Footer />
     </motion.main>
   );
 }
