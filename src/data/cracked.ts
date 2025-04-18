@@ -8,22 +8,22 @@ export const cracked:cracked[]=[
     {
         name:"tscoding",
         link:"https://www.youtube.com/@TsodingDaily",
-        about:"Chill dev"
+        about:"cracked"
     },
     {
         name:"dr Jonas Birch",
         link:"https://www.youtube.com/@dr-Jonas-Birch",
-        about:"Low level programming king"
+        about:"Low level expert"
     },
     {
         name:"Live overflow",
         link:"https://www.youtube.com/@LiveOverflow",
-        about:"bits hacker"
+        about:"bits expert"
     },
     {
         name:"jdh",
         link:"https://www.youtube.com/@jdh",
-        about:"cracked scratch dev"
+        about:"Scratch dev"
     }
 
 

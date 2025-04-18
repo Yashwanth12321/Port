@@ -10,6 +10,10 @@ import Footer from "@/components/footer";
 import { useState } from "react";
 import Dino from "@/design/Dino";
 import { ChevronRight } from "lucide-react";
+import { skills } from "@/data/skills";
+import { skill } from "@/data/skills";
+import { Badge } from "@/components/ui/badge"
+
 
 export default function Home() {
   const transition = {
@@ -161,6 +165,35 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
+        <br />
+        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+        <br />
+        <motion.div 
+        initial={{opacity:0, filter:"blur(10px)"}}
+        animate={{
+          opacity:[0,1,1],
+          filter:["blur(10px)","blur(10px)","blur(0px)"]
+        }}
+        transition={{
+          delay:0.5,
+          duration:0.2,
+          times:[0,0.666,1] 
+        }}
+        >
+        <div className="flex flex-col items-center">
+          <h1 className="text-2xl">Skills</h1>
+        </div>
+        <div className="flex flex-row items-center justify-between  rounded-md p-3 md:p-6">
+          {skills.map((skill: skill) => (
+            <div key={skill.name} className="flex flex-col items-center space-x-2 md:space-x-4 lg:space-x-6 ">
+              <Badge variant="secondary" className="hover:scale-105 transition-all" style={{ borderRadius: "5px"}}>{skill.name}</Badge>
+            </div>
+          ))}
+        </div>
+        </motion.div>
+        <br />
+        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+        <br />
 
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)" }}
@@ -216,7 +249,7 @@ export default function Home() {
       <br />
       <br />
       <br />
-        <Footer />
+      <Footer />
     </motion.main>
   );
 }
