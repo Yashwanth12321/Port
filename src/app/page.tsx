@@ -183,9 +183,9 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <h1 className="text-2xl">Skills</h1>
         </div>
-        <div className="flex flex-row items-center justify-between  rounded-md p-3 md:p-6">
+        <div className="flex flex-row flex-wrap justify-start gap-2 rounded-md p-3 md:p-6">
           {skills.map((skill: skill) => (
-            <div key={skill.name} className="flex flex-col items-center space-x-2 md:space-x-4 lg:space-x-6 ">
+            <div key={skill.name} className="flex flex-col items-center  md:space-x-4 lg:space-x-6 ">
               <Badge variant="secondary" className="hover:scale-105 transition-all" style={{ borderRadius: "5px"}}>{skill.name}</Badge>
             </div>
           ))}
