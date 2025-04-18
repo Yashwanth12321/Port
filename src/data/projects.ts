@@ -65,14 +65,14 @@ export const projects: Project[] = [
         status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/LinguasyncV2", demo: ""}
     },
-    {
-        image:"/projects/repohelp.png",
-        title:"Chat with Github Repo",
-        description:"A chatbot interface to understand that github repo better to make contributions",
-        skills:["gemini api", "github api", "python","Streamlit",],
-        briefDescription: "A chatbot interface to understand that github repo better to make contributions",
-        status:"not deployed",
-        links: {github: "https://github.com/Yashwanth12321/repohelp", demo: ""}
-    }
+    // {
+    //     image:"/projects/repohelp.png",
+    //     title:"Chat with Github Repo",
+    //     description:"A chatbot interface to understand that github repo better to make contributions",
+    //     skills:["gemini api", "github api", "python","Streamlit",],
+    //     briefDescription: "A chatbot interface to understand that github repo better to make contributions",
+    //     status:"not deployed",
+    //     links: {github: "https://github.com/Yashwanth12321/repohelp", demo: ""}
+    // }
     
 ]
