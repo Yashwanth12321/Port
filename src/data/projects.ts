@@ -6,6 +6,7 @@ export type Project = {
     description: string;
     skills: string[];
     briefDescription: string;
+    status: "deployed" | "not deployed" | "inactive" | "";
     links: {github: string, demo: string};
 }
 
@@ -16,6 +17,7 @@ export const projects: Project[] = [
         description: "A blog application built for minimal configuration and just content",
         skills: ["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
         briefDescription: "A blog application built for minimal configuration and just content",
+        status:"inactive",
         links: {github: "https://github.com/Yashwanth12321/blog", demo: "http://bestsimpledemobucket.s3-website.ap-south-1.amazonaws.com"}
     },
     {
@@ -24,6 +26,7 @@ export const projects: Project[] = [
         description:"A claims management system built to streamline insurance claims process.",
         skills:["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
         briefDescription: "A claims management system built to streamline insurance claims process.",
+        status:"inactive",
         links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "http://claimfrontendaarogyaid.s3-website.ap-south-1.amazonaws.com"}
     },
     {
@@ -32,6 +35,7 @@ export const projects: Project[] = [
         description:"A way to identify most popular influencer based on score point from raw videos",
         skills:["Python", "Pandas", "Numpy", "MediaPipe", "OpenCV", "Deepface"],
         briefDescription: "A way to identify most popular influencer based on score point from raw videos",
+        status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/Influencer-anaysis", demo: ""}
     },
     {
@@ -40,6 +44,7 @@ export const projects: Project[] = [
         description: "A library management system mobile application containing all required features including book issue/retrieval scan and more.",
         skills: ["Flutter", "Dart", "Firebase", "Cloud Firestore"],
         briefDescription: "A library management system mobile application containing all required features including book issue/retrieval scan and more.",
+        status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/LMS", demo: ""}
     },
     {
@@ -48,6 +53,7 @@ export const projects: Project[] = [
         description: "A spatial visualization tool to better visualize multiple data across India including Covid data, Gdp data, and gain insights",
         skills: ["React.js", "Javascript", "Tailwind CSS"],
         briefDescription: "A spatial visualization tool to better visualize multiple data across India including Covid data, Gdp data, and gain insights",
+        status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/vGIS", demo: ""}
     },
     {
@@ -56,6 +62,7 @@ export const projects: Project[] = [
         description: "A realtime voice translator built to translate audio to text and vice versa",
         skills: ["python", "docker", "api", "ASR", "TTS"],
         briefDescription: "A realtime voice translator built to translate audio to text and vice versa",
+        status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/LinguasyncV2", demo: ""}
     },
     {
@@ -64,6 +71,7 @@ export const projects: Project[] = [
         description:"A chatbot interface to understand that github repo better to make contributions",
         skills:["gemini api", "github api", "python","Streamlit",],
         briefDescription: "A chatbot interface to understand that github repo better to make contributions",
+        status:"not deployed",
         links: {github: "https://github.com/Yashwanth12321/repohelp", demo: ""}
     }
     

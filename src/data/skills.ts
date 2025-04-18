@@ -30,5 +30,4 @@ export const skills:skill[]=[
     {
         name:"C/C++"
     }
-    
 ]   

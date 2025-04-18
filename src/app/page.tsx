@@ -82,7 +82,7 @@ export default function Home() {
 
                 {/* Description section */}
                 <div className="flex flex-col gap-2 flex-[5] sm:text-sm md:text-lg lg:text-lg text-gray-400">
-                  <p>Building stuff if it is useful or fun</p>
+                  <p>Building stuff that is useful or fun</p>
                   <p>Exploring web dev, AI/ML, security, game dev, and more</p>
                   <p>Reading books</p>
                 </div>
@@ -164,10 +164,11 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </motion.div>
         <br />
         <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
         <br />
+        </motion.div>
+
         <motion.div 
         initial={{opacity:0, filter:"blur(10px)"}}
         animate={{
@@ -190,10 +191,10 @@ export default function Home() {
             </div>
           ))}
         </div>
-        </motion.div>
         <br />
         <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
         <br />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)" }}
@@ -224,14 +225,18 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </motion.div>
         <br />
         <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
         <br />
+        </motion.div>
+
         <motion.div
-          initial={{ opacity: 1, filter: "blur(10px)" }}
-          animate={{ opacity: 1, filter: "blur(0px)" }}
-          transition={{ delay: 1.1, duration: 0.3 }}
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+          animate={{
+            opacity: [0, 1, 1],
+            filter: ["blur(10px)", "blur(10px)", "blur(0px)"]
+          }}
+          transition={{ delay: 1.1, duration: 0.3, times: [0, 0.666, 1] }}
         >
           <div className="">
             <div className="">
@@ -243,6 +248,14 @@ export default function Home() {
         </motion.div>
         <br />
       </div>
+      <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+          animate={{
+            opacity: [0, 1, 1],
+            filter: ["blur(10px)", "blur(10px)", "blur(0px)"]
+          }}
+          transition={{ delay: 1.4, duration: 0.3, times: [0, 0.666, 1] }}
+        >
 
       <br />
       <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
@@ -250,6 +263,7 @@ export default function Home() {
       <br />
       <br />
       <Footer />
+      </motion.div>
     </motion.main>
   );
 }

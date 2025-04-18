@@ -5,7 +5,7 @@ const Learnings = () => {
     return (
         <div>
             <div className="max-w-3xl mt-10 mx-auto px-4 text-center">
-                <h1 className="text-3xl font-bold">Cracked People i follow</h1>
+                <h1 className="text-3xl font-bold">Smart People i follow</h1>
                 <br />
                 <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
                 <br />
