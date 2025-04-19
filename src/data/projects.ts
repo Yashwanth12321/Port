@@ -17,7 +17,7 @@ export const projects: Project[] = [
         description: "A blog application built for minimal configuration and just content",
         skills: ["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
         briefDescription: "A blog application built for minimal configuration and just content",
-        status:"inactive",
+        status:"deployed",
         links: {github: "https://github.com/Yashwanth12321/blog", demo: "http://bestsimpledemobucket.s3-website.ap-south-1.amazonaws.com"}
     },
     {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
         description:"A claims management system built to streamline insurance claims process.",
         skills:["React.js", "TypeScript", "Tailwind CSS","ShadCn" , "Node.js", "Express.js", "MongoDB", "aws-ec2","aws-s3"],
         briefDescription: "A claims management system built to streamline insurance claims process.",
-        status:"inactive",
+        status:"deployed",
         links: {github: "https://github.com/Yashwanth12321/Claims_MangementP", demo: "http://claimfrontendaarogyaid.s3-website.ap-south-1.amazonaws.com"}
     },
     {
