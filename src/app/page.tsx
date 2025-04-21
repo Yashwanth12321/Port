@@ -3,8 +3,7 @@
 import * as motion from "motion/react-client"
 import { Experience, experiences } from "@/data/experience";
 import Image from 'next/image';
-import { projects, Project } from "@/data/projects";
-import { ProjectCard } from "@/components/ProjectCard";
+
 import Link from "next/link";
 import Footer from "@/components/footer";
 import { useState } from "react";
