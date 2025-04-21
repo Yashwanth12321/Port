@@ -56,7 +56,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
                 </div>
                 <div className="flex justify-between gap-4 items-center">
                 {/* Deployed and Live */}
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                     <div className={`h-3 w-3 border border-zinc-800  rounded-full animate-ping ${
                         project.status === "deployed"
                           ? "bg-green-500"
@@ -66,7 +66,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
                       }`}>
                     </div>
                     <Badge variant="outline" className="text-sm bg-zinc-800" key={project.status}>{project.status}</Badge>
-                </div>
+                </div> */}
             </div>
             </div>
             

@@ -13,6 +13,9 @@ import { ChevronRight } from "lucide-react";
 import { skills } from "@/data/skills";
 import { skill } from "@/data/skills";
 import { Badge } from "@/components/ui/badge"
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+
+
 
 
 export default function Home() {
@@ -70,8 +73,8 @@ export default function Home() {
               <Image className="rounded-full w-20" src="/seneca.png" alt="seneca" width={40} height={40} />
             </div>
             <div className="flex flex-col items-center">
-              <h1 className="text-2xl">Yashwanth Napa</h1>
-              <p className="text-lg">Engineer</p>
+              <h1 className="text-3xl">Yashwanth Napa</h1>
+              <p className="text-xl">Engineer</p>
 
               <div className="flex items-center space-x-4 mt-4">
                 {/* "I like" section */}
@@ -107,7 +110,7 @@ export default function Home() {
         >
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center">
-              <h1 className="text-2xl font-bold"> Work experience</h1>
+              <h1 className="text-3xl font-bold"> Work experience</h1>
 
             </div>
             <div className="w-full ">
@@ -164,36 +167,33 @@ export default function Home() {
               ))}
             </div>
           </div>
-        <br />
-        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
-        <br />
+          <br />
+          <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+          <br />
         </motion.div>
 
-        <motion.div 
-        initial={{opacity:0, filter:"blur(10px)"}}
-        animate={{
-          opacity:[0,1,1],
-          filter:["blur(10px)","blur(10px)","blur(0px)"]
-        }}
-        transition={{
-          delay:0.5,
-          duration:0.2,
-          times:[0,0.666,1] 
-        }}
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+          animate={{
+            opacity: [0, 1, 1],
+            filter: ["blur(10px)", "blur(10px)", "blur(0px)"]
+          }}
+          transition={{
+            delay: 0.5,
+            duration: 0.2,
+            times: [0, 0.666, 1]
+          }}
         >
-        <div className="flex flex-col items-center">
-          <h1 className="text-2xl">Skills</h1>
-        </div>
-        <div className="flex flex-row flex-wrap justify-start gap-2 rounded-md p-3 md:p-6">
-          {skills.map((skill: skill) => (
-            <div key={skill.name} className="flex flex-col items-center  md:space-x-4 lg:space-x-6 ">
-              <Badge variant="secondary" className="hover:scale-105 transition-all" style={{ borderRadius: "5px"}}>{skill.name}</Badge>
-            </div>
-          ))}
-        </div>
-        <br />
-        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
-        <br />
+          <div className="flex flex-col items-center">
+            <h1 className="text-3xl">Skills</h1>
+          </div>
+          <div className="flex flex-row flex-wrap justify-start gap-2 rounded-md p-3 md:p-6">
+            {skills.map((skill: skill) => (
+              <div key={skill.name} className="flex flex-col items-center  md:space-x-4 lg:space-x-6 ">
+                <Badge variant="secondary" className="hover:scale-105 transition-all" style={{ borderRadius: "5px" }}>{skill.name}</Badge>
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
@@ -208,26 +208,26 @@ export default function Home() {
           <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
           <br />
           <div className="flex flex-col items-center">
-            <h1 className="text-2xl">Some things I have built</h1>
+            <h1 className="text-3xl">Some things I have built</h1>
 
             {/* Grid Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 mt-6 text-xl sm:text-xl md:text-2xl lg:text-2xl">
 
-              {projects.map((project: Project) => (
-                <div key={project.title}>
-                  <ProjectCard project={project} />
-
-                </div>
-              ))}
-
-              <Link className="flex flex-col items-center justify-center space-y-4 border border-zinc-800 rounded-md p-6 hover:scale-105 transition-all" href="/projects">
-                Checkout other stuff
-              </Link>
+              <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-black dark:bg-zinc-900">
+                <Link className="flex flex-col items-center justify-center space-y-4 p-6 hover:scale-105 transition-all" href="/projects">
+                  Projects
+                </Link>
+              </BackgroundGradient>
+              <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-black dark:bg-zinc-900">
+                <Link className="flex flex-col items-center justify-center space-y-4 p-6 hover:scale-105 transition-all " href="/coolstuff">
+                  Cool Stuff
+                </Link>
+              </BackgroundGradient>
             </div>
           </div>
-        <br />
-        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
-        <br />
+          <br />
+          <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+          <br />
         </motion.div>
 
         <motion.div
@@ -249,20 +249,20 @@ export default function Home() {
         <br />
       </div>
       <motion.div
-          initial={{ opacity: 0, filter: "blur(10px)" }}
-          animate={{
-            opacity: [0, 1, 1],
-            filter: ["blur(10px)", "blur(10px)", "blur(0px)"]
-          }}
-          transition={{ delay: 1.4, duration: 0.3, times: [0, 0.666, 1] }}
-        >
+        initial={{ opacity: 0, filter: "blur(10px)" }}
+        animate={{
+          opacity: [0, 1, 1],
+          filter: ["blur(10px)", "blur(10px)", "blur(0px)"]
+        }}
+        transition={{ delay: 1.4, duration: 0.3, times: [0, 0.666, 1] }}
+      >
 
-      <br />
-      <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
-      <br />
-      <br />
-      <br />
-      <Footer />
+        <br />
+        <hr className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0" />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </motion.div>
     </motion.main>
   );
