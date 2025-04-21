@@ -2,7 +2,7 @@
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 import { Project } from "@/data/projects";
-import { motion } from "framer-motion"; // fixed import
+import * as motion from "motion/react-client"
 
 const cardVariants = {
   hidden: { opacity: 0, filter: "blur(10px)", y: 20 },
