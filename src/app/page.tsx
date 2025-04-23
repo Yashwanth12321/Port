@@ -212,12 +212,12 @@ export default function Home() {
             {/* Grid Layout */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 mt-6 text-xl sm:text-xl md:text-2xl lg:text-2xl">
 
-              <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-black dark:bg-zinc-900">
+              <BackgroundGradient className="rounded-[22px] w-80 sm:max-w-sm  p-4 sm:p-10 bg-black dark:bg-zinc-900">
                 <Link className="flex flex-col items-center justify-center space-y-4 p-6 hover:scale-105 transition-all" href="/projects">
                   Projects
                 </Link>
               </BackgroundGradient>
-              <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-black dark:bg-zinc-900">
+              <BackgroundGradient className="rounded-[22px] w-80 sm:max-w-sm p-4 sm:p-10 bg-black dark:bg-zinc-900">
                 <Link className="flex flex-col items-center justify-center space-y-4 p-6 hover:scale-105 transition-all " href="/coolstuff">
                   Cool Stuff
                 </Link>
