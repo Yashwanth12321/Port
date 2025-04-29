@@ -23,7 +23,12 @@ export const cracked:cracked[]=[
     {
         name:"jdh",
         link:"https://www.youtube.com/@jdh",
-        about:"Scratch dev"
+        about:"Scratch"
+    },
+    {
+        name:"tokyospliff",
+        link:"https://www.youtube.com/@tokyospliff",
+        about:"OpenGL stuff"
     }
 
 
