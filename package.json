@@ -13,6 +13,7 @@
     "@radix-ui/react-slot": "^1.2.0",
     "@radix-ui/react-tooltip": "^1.1.8",
     "@types/animejs": "^3.1.13",
+    "@vercel/analytics": "^1.5.0",
     "animejs": "^3.2.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

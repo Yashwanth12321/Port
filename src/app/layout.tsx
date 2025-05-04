@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navdock } from "@/Navdock";
-
+import { Analytics } from "@vercel/analytics/react"
 import { Quantico } from "next/font/google";
 
 export const quantico = Quantico({
@@ -30,6 +30,7 @@ export default function RootLayout({
       <Navdock />
     </div>
     {children}
+    <Analytics/>
   </body>
 </html>
 
